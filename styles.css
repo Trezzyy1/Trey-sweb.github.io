@@ -1,11 +1,18 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header Styles */
 header {
     background: #35424a;
     color: #ffffff;
@@ -26,8 +33,10 @@ nav ul li {
 nav a {
     color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
 }
@@ -37,8 +46,10 @@ section {
     background: #ffffff;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -49,10 +60,7 @@ footer {
     width: 100%;
 }
 
-.hidden {
-    display: none;
-}
-
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -67,4 +75,25 @@ form input, form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+form button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #3e4b54;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
